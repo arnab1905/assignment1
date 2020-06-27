@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestSuite" thread-count="5">
+	<test name="ChromeTest">
+		<parameter name="BrowserName" value="Chrome" />
+		<classes>
+		    <class name="test.ketto.Ketto_test1"/>
+		</classes>
+	</test>
+
+	<test name="FirefoxTest">
+		<parameter name="BrowserName" value="Firefox" />
+		<classes>
+            <class name="test.ketto.Ketto_test1"/>
+		</classes>
+    </test>
+
+	<!--<test name="IETest">
+		<parameter name="BrowserName" value="ie" />
+		<classes>
+			<class name="test.ketto.Ketto_test1"/>
+		</classes>
+	</test>-->
+</suite>
