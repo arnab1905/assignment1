@@ -8,6 +8,7 @@ Overview:
 Automate test scenarios of www.ketto.org/ 's "Start a Fundraiser" forms.
 
 Flow of the application:
+
 Step1: Navigate to page and click on Start Fundraiser.
 Step2: Validate the Sign-up form. This would include all valid and invalid test scenarios.
 Step3: Click on "Next" and validate the first Step of the new form which includes additional details for the fundraiser. Here, check if we can change the purpose of the campaign
