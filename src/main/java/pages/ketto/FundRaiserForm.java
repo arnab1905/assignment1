@@ -88,9 +88,9 @@ public class FundRaiserForm<abc> {
         Select_arrow.click();
 
         Thread.sleep(1500);
-        Assert.assertEquals(Med_Treat.getText(),"Medical Treatment");
-        Assert.assertEquals(NGO_Char.getText(),"NGO / Charity");
-        Assert.assertEquals(Other.getText(),"Other Cause");
+        Assert.assertEquals(Med_Treat.getText(),prop.getProperty("Med"));
+        Assert.assertEquals(NGO_Char.getText(),prop.getProperty("NGO"));
+        Assert.assertEquals(Other.getText(),prop.getProperty("Other_Cause"));
 
         // Add values in the purpose in the arraylist declared
         purposes1.add(Med_Treat);
@@ -104,10 +104,10 @@ public class FundRaiserForm<abc> {
         System.out.println("Selected Purpose: "+final_p.getText());
         final_p.click();
         Assert.assertEquals(Name_Guideline.getText(),prop.getProperty("Name_Guideline"));
-        Name_TextBox.sendKeys("Arnab Banerjee");
-        Mobile_TextBox.sendKeys("9898989898");
-        Email_TextBox.sendKeys("testing1234@testing4321.com");
-        Password_TextBox.sendKeys("testing");
+        Name_TextBox.sendKeys(prop.getProperty("Name"));
+        Mobile_TextBox.sendKeys(prop.getProperty("Mobile"));
+        Email_TextBox.sendKeys(prop.getProperty("EmailId"));
+        Password_TextBox.sendKeys(prop.getProperty("Password"));
 
         Next_button.click();
 
